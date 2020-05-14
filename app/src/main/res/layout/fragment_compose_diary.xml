@@ -26,8 +26,8 @@
 
         <Spinner
             android:id="@+id/spinnerDiarySubject"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_width="325dp"
+            android:layout_height="45dp"
             android:layout_marginTop="25dp"
             android:background="@drawable/bg_edittext"
             android:paddingLeft="6dp"
@@ -39,29 +39,29 @@
 
         <Button
             android:id="@+id/editTextDiaryDate"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_width="325dp"
+            android:layout_height="45dp"
             android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edittext"
             android:ems="10"
+            android:gravity="center_vertical"
             android:hint="Enter Date"
             android:inputType="date"
-            android:background="@drawable/bg_edittext"
             android:paddingLeft="6dp"
-            android:gravity="center_vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinnerDiarySubject" />
 
         <EditText
             android:id="@+id/editTextDiaryDetails"
-            android:layout_width="302dp"
-            android:layout_height="172dp"
+            android:layout_width="325dp"
+            android:layout_height="150dp"
             android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edittext"
             android:ems="10"
             android:gravity="start|top"
             android:hint="Enter Diary Details"
             android:inputType="textMultiLine"
-            android:background="@drawable/bg_edittext"
             android:paddingLeft="6dp"
             android:paddingTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,8 +71,8 @@
 
         <Spinner
             android:id="@+id/spinnerDiaryType"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_width="325dp"
+            android:layout_height="45dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_edittext"
             android:paddingLeft="6dp"
@@ -82,10 +82,12 @@
 
         <Button
             android:id="@+id/buttonAddDiary"
-            android:layout_width="300dp"
+            android:layout_width="325dp"
             android:layout_height="45dp"
             android:layout_marginTop="15dp"
-            android:background="@drawable/btn_bg"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#000000"
             android:text="Add Diary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"

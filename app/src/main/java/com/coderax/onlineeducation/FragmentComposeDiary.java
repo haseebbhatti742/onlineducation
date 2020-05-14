@@ -42,8 +42,6 @@ public class FragmentComposeDiary extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_compose_diary, container, false);
 
-        Toast.makeText(getActivity().getApplicationContext(), "Hey", Toast.LENGTH_LONG).show();
-
         spinnerDiarySubject = root.findViewById(R.id.spinnerDiarySubject);
         spinnerDiaryType = root.findViewById(R.id.spinnerDiaryType);
 
