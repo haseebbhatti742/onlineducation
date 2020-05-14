@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
@@ -40,6 +41,8 @@ public class FragmentComposeDiary extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_compose_diary, container, false);
+
+        Toast.makeText(getActivity().getApplicationContext(), "Hey", Toast.LENGTH_LONG).show();
 
         spinnerDiarySubject = root.findViewById(R.id.spinnerDiarySubject);
         spinnerDiaryType = root.findViewById(R.id.spinnerDiaryType);
