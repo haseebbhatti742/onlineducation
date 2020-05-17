@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     TextView textViewlogin;
     EditText editTextUsername, editTextPassword;
@@ -42,7 +42,7 @@ public class login extends AppCompatActivity {
 //                else {
 //                    startActivity(new Intent(Login.this, Home.class));
 //                }
-                startActivity(new Intent(login.this, drawerActivity.class));
+                startActivity(new Intent(LoginActivity.this, DrawerActivity.class));
             }
         });
 

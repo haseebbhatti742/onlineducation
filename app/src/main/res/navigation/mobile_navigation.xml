@@ -3,19 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_classes">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.coderax.onlineeducation.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_classes"
+        android:name="com.coderax.onlineeducation.ui.classes.ClassesFragment"
+        android:label="@string/menu_classes" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.coderax.onlineeducation.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_diary"
+        android:name="com.coderax.onlineeducation.ui.diary.DiaryFragment"
+        android:label="@string/menu_diary" />
 
     <fragment
         android:id="@+id/nav_slideshow"

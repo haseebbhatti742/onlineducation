@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class splashActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     Animation topAnim, bottomAnim;
     ImageView img;
@@ -34,7 +34,7 @@ public class splashActivity extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                startActivity(new Intent(splashActivity.this, login.class));
+                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
             }
         },4000);
 
