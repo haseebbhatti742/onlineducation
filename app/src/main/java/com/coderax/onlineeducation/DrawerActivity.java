@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
 
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -23,6 +25,8 @@ public class DrawerActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     CircleImageView person_image;
+
+    public DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +36,7 @@ public class DrawerActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
 
         // Passing each menu ID as a set of Ids because each
@@ -49,6 +53,17 @@ public class DrawerActivity extends AppCompatActivity {
         
     }
 
+
+    protected void replaceContentLayout(int sourceId, int destinationId) {
+        View contentLayout = findViewById(destinationId);
+
+        ViewGroup parent = (ViewGroup) contentLayout.getParent();
+        int index = parent.indexOfChild(contentLayout);
+
+        parent.removeView(contentLayout);
+        contentLayout = getLayoutInflater().inflate(sourceId, parent, false);
+        parent.addView(contentLayout, index);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
