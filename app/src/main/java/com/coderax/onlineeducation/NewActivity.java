@@ -3,7 +3,7 @@ package com.coderax.onlineeducation;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class NewActivity extends AppCompatActivity {
+public class NewActivity extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

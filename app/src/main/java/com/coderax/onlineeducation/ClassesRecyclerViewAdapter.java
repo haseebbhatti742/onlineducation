@@ -1,6 +1,7 @@
 package com.coderax.onlineeducation;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,8 +47,9 @@ public class ClassesRecyclerViewAdapter extends RecyclerView.Adapter<ClassesRecy
             @Override
             public void onClick(View v) {
                 Toast.makeText(v.getContext(), "Class Clicked", Toast.LENGTH_LONG).show();
-                FragmentManager fragmentManager = ((AppCompatActivity)context).getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.host_fragment_diary_activity, new DiaryFragment()).commit();
+//                FragmentManager fragmentManager = ((AppCompatActivity)context).getSupportFragmentManager();
+//                fragmentManager.beginTransaction().replace(R.id.host_fragment_diary_activity, new DiaryFragment()).commit();
+                context.startActivity(new Intent(context, NewActivity.class));
             }
         });
         return holder;
